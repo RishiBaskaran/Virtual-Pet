@@ -13,6 +13,7 @@ function preload()
 {
   dogimg1 = loadImage("images/dogImg.png")
   dogimg2 = loadImage("images/dogImg1.png")
+  gardenimg = loadImage("images/Garden.png"
 	//load images here
 }
 
@@ -50,7 +51,9 @@ function draw(){
    }else{
      text("Last Fed (approx timing) : "+ lastFed + " AM", 300,100);
    }
-
+if(lastFed + 1){
+	background(gardenimg);
+}
  drawSprites();
   
  fill(255,255,254);
